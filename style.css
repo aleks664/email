@@ -236,4 +236,24 @@ img {
             float: right;
         }
     }
+    .user,
+    .contact {
+        margin-left: 0!important;
+        max-width: 100%!important;
+        display: block!important;
+    }
+    .name,
+    .post {
+        text-align: center!important;
+    }
+    .lnks {
+        margin-top: 32px!important;
+    }
+    .lnks-2 {
+        margin-top: 24px!important;
+    }
+    .f-t {
+        text-align: center !important;
+        font-size: 15px!important;
+    }
 }
