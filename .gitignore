@@ -1,0 +1,12 @@
+.idea/
+dev/
+dist/
+public/
+files/
+desing-picts/
+node_modules/
+package-lock.json
+/.env
+/.env.local
+/zip/
+/env.txt
