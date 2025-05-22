@@ -146,6 +146,7 @@ body {
     padding: 0;
     min-width: 100%;
     background-color: #142036;
+    color: #142036;
     font-family: 'Gilroy', Arial, Helvetica, sans-serif;
 }
 
@@ -163,6 +164,11 @@ img {
         padding: 0 16px 42px!important;
     }
 
+    .header {
+        border-radius: 6px;
+        overflow: hidden;
+        background: #FFF;
+    }
     .header table tr,
     .header table {
         display: block;
