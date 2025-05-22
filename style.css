@@ -222,6 +222,7 @@ img {
     }
     .column {
         margin: 0!important;
+        max-width: 100%!important;
     }
     .social {
         padding-top: 18px!important;
