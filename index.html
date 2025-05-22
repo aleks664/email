@@ -7,7 +7,291 @@
     <!--<![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>В вашем ящике новое сообщение!</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /**
+ * normalize
+ */
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Regular.eot");
+            src: local("Gilroy Regular"), local("Gilroy-Regular"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.eot");
+            src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.ttf") format("truetype");
+            font-weight: 800;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Bold.eot");
+            src: local("Gilroy Bold"), local("Gilroy-Bold"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.ttf") format("truetype");
+            font-weight: bold;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Black.eot");
+            src: local("Gilroy Black"), local("Gilroy-Black"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Light.eot");
+            src: local("Gilroy Light"), local("Gilroy-Light"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.ttf") format("truetype");
+            font-weight: 300;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.eot");
+            src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.ttf") format("truetype");
+            font-weight: 600;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Medium.eot");
+            src: local("Gilroy Medium"), local("Gilroy-Medium"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.ttf") format("truetype");
+            font-weight: 500;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.eot");
+            src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.ttf") format("truetype");
+            font-weight: 500;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.eot");
+            src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.ttf") format("truetype");
+            font-weight: 900;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.eot");
+            src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.ttf") format("truetype");
+            font-weight: 200;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.eot");
+            src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.ttf") format("truetype");
+            font-weight: normal;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.eot");
+            src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.ttf") format("truetype");
+            font-weight: 600;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.eot");
+            src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.ttf") format("truetype");
+            font-weight: 900;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.eot");
+            src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.ttf") format("truetype");
+            font-weight: 800;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.eot");
+            src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.ttf") format("truetype");
+            font-weight: bold;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.eot");
+            src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.ttf") format("truetype");
+            font-weight: 200;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.eot");
+            src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.ttf") format("truetype");
+            font-weight: 300;
+            font-style: italic; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.eot");
+            src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.ttf") format("truetype");
+            font-weight: 900;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-Thin.eot");
+            src: local("Gilroy Thin"), local("Gilroy-Thin"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.ttf") format("truetype");
+            font-weight: 100;
+            font-style: normal; }
+
+        @font-face {
+            font-family: 'Gilroy';
+            src: url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.eot");
+            src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.ttf") format("truetype");
+            font-weight: 100;
+            font-style: italic; }
+
+        body {
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            background-color: #142036;
+            color: #142036;
+            font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+        }
+
+        table, tr, td { border-spacing: 0 !important; mso-table-lspace: 0px !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; mso-line-height-rule:exactly !important;}
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+        @media screen and (max-width: 630px){
+            .row {
+                padding: 0 0 42px!important;
+            }
+            img {
+                max-width: 100%;
+            }
+
+            .header tbody table {
+            }
+            .header>table>tbody>tr>td,
+            .header>table>tbody {
+                display: block;
+            }
+            .header {
+                border-radius: 6px;
+                overflow: hidden;
+                background: #FFF;
+            }
+            .header table tr,
+            .header table {
+                display: block;
+            }
+            .header .logo {
+                display: block;
+                width: 100%!important;
+                padding: 24px 0!important;
+            }
+            .header .logo img {
+                margin: 0 auto;
+                width: 188px;
+            }
+            .header .emblem img {
+                height: auto!important;
+            }
+            .header .emblem {
+                padding: 24px 28px!important;
+                border-top: 1px solid #142036;
+            }
+            .box {
+                padding: 24px;
+            }
+            .envelope {
+                text-align: center;
+            }
+            .envelope img {
+                margin: 0 auto;
+                width: 64px;
+                min-width: 64px;
+            }
+            .h1 {
+                font-size: 32px!important;
+            }
+            .txt {
+                padding-left: 0!important;
+                padding-right: 0!important;
+            }
+            .btn  {
+                padding-left: 5px!important;
+                padding-right: 5px!important;
+                width: 100%!important;
+            }
+            .btn img {
+                display: none!important;
+            }
+            .column +.column {
+                margin-top: 24px!important;
+            }
+            .column {
+                margin: 0!important;
+                max-width: 100%!important;
+            }
+
+            .social {
+                padding-top: 18px!important;
+                padding-bottom: 43px!important;
+            }
+            .row-m-pb-0 {
+                padding-bottom: 0!important;
+            }
+            .social-lnk {
+                max-width: 48%!important;
+                margin-top: 24px!important;
+                margin-left: 0!important;
+                &:nth-child(2),
+                &:nth-child(4) {
+                    float: right;
+                }
+            }
+            .user,
+            .contact {
+                margin-left: 0!important;
+                max-width: 100%!important;
+                display: block!important;
+            }
+            .user img {
+                margin: 0 auto;
+            }
+            .name,
+            .post {
+                text-align: center!important;
+                border-left: none!important;
+                padding-left: 0!important;
+            }
+            .lnks {
+                padding-top: 32px!important;
+                text-align: center!important;
+            }
+            .lnks-2 {
+                margin-top: 24px!important;
+                text-align: center!important;
+            }
+            .f-t {
+                padding-top: 32px!important;
+                text-align: center !important;
+                font-size: 15px!important;
+            }
+            .wrapper {
+                width: 100%!important;
+                min-width: 100%!important;
+            }
+        }
+    </style>
     <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
         table {border-collapse: collapse;}
