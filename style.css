@@ -223,4 +223,17 @@ img {
     .column {
         margin: 0!important;
     }
+    .social {
+        padding-top: 18px!important;
+        padding-bottom: 63px!important;
+    }
+    .social-lnk {
+        max-width: 149px!important;
+        margin-top: 24px!important;
+        margin-left: 0!important;
+        &:nth-child(2),
+        &:nth-child(4) {
+            float: right;
+        }
+    }
 }
