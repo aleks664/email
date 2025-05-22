@@ -164,6 +164,12 @@ img {
         padding: 0 0 42px!important;
     }
 
+    .header tbody table {
+    }
+    .header>table>tbody>tr>td,
+    .header>table>tbody {
+        display: block;
+    }
     .header {
         border-radius: 6px;
         overflow: hidden;
