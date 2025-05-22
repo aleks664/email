@@ -210,7 +210,8 @@ img {
         font-size: 32px!important;
     }
     .txt {
-
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
     .btn {
         padding-left: 15px!important;
