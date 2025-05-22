@@ -163,6 +163,9 @@ img {
     .row {
         padding: 0 0 42px!important;
     }
+    img {
+        max-width: 100%;
+    }
 
     .header tbody table {
     }
