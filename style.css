@@ -228,7 +228,7 @@ img {
         padding-bottom: 63px!important;
     }
     .social-lnk {
-        max-width: 149px!important;
+        max-width: 48%!important;
         margin-top: 24px!important;
         margin-left: 0!important;
         &:nth-child(2),
@@ -242,17 +242,25 @@ img {
         max-width: 100%!important;
         display: block!important;
     }
+    .user img {
+        margin: 0 auto;
+    }
     .name,
     .post {
         text-align: center!important;
+        border-left: none!important;
+        padding-left: 0!important;
     }
     .lnks {
-        margin-top: 32px!important;
+        padding-top: 32px!important;
+        text-align: center!important;
     }
     .lnks-2 {
         margin-top: 24px!important;
+        text-align: center!important;
     }
     .f-t {
+        padding-top: 32px!important;
         text-align: center !important;
         font-size: 15px!important;
     }
