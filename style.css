@@ -266,6 +266,6 @@ img {
         font-size: 15px!important;
     }
     .wrapper {
-        min-width: 100%!important;
+        width: 100%!important;
     }
 }
