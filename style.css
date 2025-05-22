@@ -161,7 +161,7 @@ img {
 }
 @media only screen and (max-width: 600px){
     .row {
-        padding: 0 16px 42px!important;
+        padding: 0 0 42px!important;
     }
 
     .header {
@@ -189,5 +189,23 @@ img {
     .header .emblem {
         padding: 24px 28px!important;
         border-top: 1px solid #142036;
+    }
+    .box {
+        padding: 24px;
+        display: none!important;
+    }
+    .envelope {
+        text-align: center;
+    }
+    .envelope img {
+        margin: 0 auto;
+        width: 64px;
+        min-width: 64px;
+    }
+    .h1 {
+        font-size: 32px!important;
+    }
+    .txt {
+
     }
 }
