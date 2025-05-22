@@ -270,5 +270,6 @@ img {
     }
     .wrapper {
         width: 100%!important;
+        min-width: 320px!important;
     }
 }
