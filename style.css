@@ -159,7 +159,7 @@ td {
 img {
     border: 0;
 }
-@media only screen and (max-device-width: 600px){
+@media screen and (max-device-width: 600px){
     .row {
         padding: 0 0 42px!important;
     }
