@@ -264,4 +264,7 @@ img {
         text-align: center !important;
         font-size: 15px!important;
     }
+    .wrapper {
+        min-width: 100%!important;
+    }
 }
