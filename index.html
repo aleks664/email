@@ -8,156 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>В вашем ящике новое сообщение!</title>
     <style>
-        /**
- * normalize
- */
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Regular.eot");
-            src: local("Gilroy Regular"), local("Gilroy-Regular"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.eot");
-            src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-ExtraboldItalic.ttf") format("truetype");
-            font-weight: 800;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Bold.eot");
-            src: local("Gilroy Bold"), local("Gilroy-Bold"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Bold.ttf") format("truetype");
-            font-weight: bold;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Black.eot");
-            src: local("Gilroy Black"), local("Gilroy-Black"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Black.ttf") format("truetype");
-            font-weight: 900;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Light.eot");
-            src: local("Gilroy Light"), local("Gilroy-Light"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Light.ttf") format("truetype");
-            font-weight: 300;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.eot");
-            src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Semibold.ttf") format("truetype");
-            font-weight: 600;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Medium.eot");
-            src: local("Gilroy Medium"), local("Gilroy-Medium"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Medium.ttf") format("truetype");
-            font-weight: 500;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.eot");
-            src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-MediumItalic.ttf") format("truetype");
-            font-weight: 500;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.eot");
-            src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-BlackItalic.ttf") format("truetype");
-            font-weight: 900;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.eot");
-            src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLight.ttf") format("truetype");
-            font-weight: 200;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.eot");
-            src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-RegularItalic.ttf") format("truetype");
-            font-weight: normal;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.eot");
-            src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-SemiboldItalic.ttf") format("truetype");
-            font-weight: 600;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.eot");
-            src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-HeavyItalic.ttf") format("truetype");
-            font-weight: 900;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.eot");
-            src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Extrabold.ttf") format("truetype");
-            font-weight: 800;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.eot");
-            src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-BoldItalic.ttf") format("truetype");
-            font-weight: bold;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.eot");
-            src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-UltraLightItalic.ttf") format("truetype");
-            font-weight: 200;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.eot");
-            src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-LightItalic.ttf") format("truetype");
-            font-weight: 300;
-            font-style: italic; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.eot");
-            src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Heavy.ttf") format("truetype");
-            font-weight: 900;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-Thin.eot");
-            src: local("Gilroy Thin"), local("Gilroy-Thin"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-Thin.ttf") format("truetype");
-            font-weight: 100;
-            font-style: normal; }
-
-        @font-face {
-            font-family: 'Gilroy';
-            src: url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.eot");
-            src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.eot?#iefix") format("embedded-opentype"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.woff2") format("woff2"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.woff") format("woff"), url("https://aleks664.github.io/email/fonts/Gilroy-ThinItalic.ttf") format("truetype");
-            font-weight: 100;
-            font-style: italic; }
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
         body {
             Margin: 0;
             padding: 0;
             min-width: 100%;
             background-color: #142036;
             color: #142036;
-            font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
         }
 
         table, tr, td { border-spacing: 0 !important; mso-table-lspace: 0px !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; mso-line-height-rule:exactly !important;}
@@ -227,8 +85,8 @@
                 padding-right: 0!important;
             }
             .btn  {
-                padding-left: 5px!important;
-                padding-right: 5px!important;
+                padding-left: 0!important;
+                padding-right: 0!important;
                 width: 100%!important;
             }
             .btn img {
@@ -291,6 +149,7 @@
                 min-width: 100%!important;
             }
         }
+
     </style>
     <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
@@ -316,19 +175,19 @@
                             <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; max-width:600px; border:0;">
                                 <tr>
                                     <td bgcolor="#FFF" width="124" style="background: #FFF;padding-top:34px;padding-bottom:34px;padding-right:32px;padding-left:32px; border-radius: 0 0 0 6px;" class="logo" >
-                                        <img src="https://aleks664.github.io/email/images/logo.png" alt="logo" width="124" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:124px">
+                                        <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNjUxc3I0bHlibV9sb2dvLnBuZyJdXQ/1859037775c865fb/logo.png" alt="logo" width="124" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:124px">
                                     </td>
                                     <td align="center" bgcolor="#FFFFFF" class="emblem" style=" background: #FFF;padding-top:32px;padding-bottom:32px;padding-right:32px;padding-left:32px; border-radius: 0 0 6px 0;" class="logo">
                                         <table cellspacing="0" cellpadding="0" border="0" style="display: table; max-width:600px; border:0;">
                                             <tr>
                                                 <td class="emblem-1" width="96" style="padding-top:0;padding-bottom:0;padding-right:24px;padding-left:0;">
-                                                    <img src="https://aleks664.github.io/email/images/emblem-1.png" alt="" width="72" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:72px">
+                                                    <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvOHhyYjY4em0xaF9lbWJsZW1fMS5wbmciXV0/4e4682ffb50cfdcb/emblem-1.png" alt="" width="72" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:72px">
                                                 </td>
                                                 <td class="emblem-2" width="96" style="padding-top:0;padding-bottom:0;padding-right:24px;padding-left:0;">
-                                                    <img src="https://aleks664.github.io/email/images/emblem-2.png" alt="" width="72" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:72px">
+                                                    <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNXBlcmprNW5nM19lbWJsZW1fMi5wbmciXV0/091ee29b58ccf511/emblem-2.png" alt="" width="72" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:72px">
                                                 </td>
                                                 <td class="emblem-3" valign="middle" width="141" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
-                                                    <img src="https://aleks664.github.io/email/images/emblem-3.png" alt="" width="141" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:141px">
+                                                    <img rc="/media/W1siZiIsIjIwMjUvMDUvMjIvNDM0YzF0eDlrcl9lbWJsZW1fMy5wbmciXV0/00d86dd66a6f401f/emblem-3.png" alt="emblem-3.png" width="141" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:141px">
                                                 </td>
                                             </tr>
                                         </table>
@@ -348,17 +207,17 @@
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
                                             <td align="right" class="envelope" style="padding-bottom: 10px;">
-                                                <img  src="https://aleks664.github.io/email/images/envelope.png" alt="logo" width="46"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:46px">
+                                                <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIvNHIyaXYxem1lOV9lbnZlbG9wZS5wbmciXV0/7c9ef184add1123d/envelope.png" alt="envelope.png" width="46"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:46px">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
                                             </td>
                                         </tr>
@@ -368,13 +227,13 @@
                                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:327px;" arcsize="10%" strokecolor="#ffb11e" fill="t">
                                                     <v:fill type="tile" src="" color="#ffb11e" />
                                                     <w:anchorlock/>
-                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                         Присоединиться к Off group
                                                         <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                     </center>
                                                 </v:roundrect>
                                                 <![endif]-->
-                                                <a class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                                <a class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
                                                     Присоединиться к Off group
                                                     <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                 </a>
@@ -396,17 +255,17 @@
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
                                             <td style="padding-bottom: 42px;">
-                                                <img  src="https://aleks664.github.io/email/images/img-1.png" alt="" width="522"  style="margin: 0 auto;-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
+                                                <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIvMnVlNW9yaTh2el9pbWdfMS5wbmciXV0/538dce4ebab935b7/img-1.png" alt="img-1.png" width="522"  style="margin: 0 auto;-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
                                             </td>
                                         </tr>
@@ -417,13 +276,13 @@
                                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:327px;" arcsize="10%" strokecolor="#ffb11e" fill="t">
                                                     <v:fill type="tile" src="" color="#ffb11e" />
                                                     <w:anchorlock/>
-                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                         Присоединиться к Off group
                                                         <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                     </center>
                                                 </v:roundrect>
                                                 <![endif]-->
-                                                <a  class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                                <a  class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
                                                     Присоединиться к Off group
                                                     <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                 </a>
@@ -445,13 +304,13 @@
                                 <td class="box" bgcolor="#FFF" width="124" style="background: #FFF;padding-top:24px;padding-bottom:42px;padding-right:24px;padding-left:24px; border-radius: 6px;" >
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500; font-size: 14px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="txt" style="padding-bottom: 32px; padding-left: 8px; padding-right: 8px; font-weight: 500; font-size: 14px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
                                             </td>
                                         </tr>
@@ -461,13 +320,13 @@
                                                 <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:60px;v-text-anchor:middle;width:327px;" arcsize="10%" strokecolor="#ffb11e" fill="t">
                                                     <v:fill type="tile" src="" color="#ffb11e" />
                                                     <w:anchorlock/>
-                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                                    <center style="color:#142036;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                         Присоединиться к Off group
                                                         <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                     </center>
                                                 </v:roundrect>
                                                 <![endif]-->
-                                                <a class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                                <a class="btn" href="http://" style="border:none; box-shadow: none; outline: none;display: inline-block; text-decoration: none; border-radius: 6px; background: #ffb11e; padding: 20px 32px; font-weight: 600;font-size: 16px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
                                                     Присоединиться к Off group
                                                     <img style="vertical-align: middle; margin-left: 14px" src="https://aleks664.github.io/email/images/arrow.png" alt="">
                                                 </a>
@@ -489,7 +348,7 @@
                                 <td class="box" bgcolor="#FFF" width="124" style="background: #FFF;padding-top:24px;padding-bottom:24px;padding-right:24px;padding-left:24px; border-radius: 6px;"  >
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
@@ -497,7 +356,7 @@
                                         <tr>
                                             <td style="padding: 0;">
                                                 <a href="#" class="lnk-video" style="display: block;position: relative">
-                                                    <img  src="https://aleks664.github.io/email/images/img-2.png" alt="" width="522"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0; margin: 0 auto; text-decoration:none;width: 100%">
+                                                    <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIvNHJhaW96NTd2al9pbWdfMi5wbmciXV0/291c4ed1336a38d5/img-2.png" alt="img-2.png" width="522"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0; margin: 0 auto; text-decoration:none;width: 100%">
                                                 </a>
                                             </td>
                                         </tr>
@@ -516,7 +375,7 @@
                                 <td class="box" bgcolor="#FFF" width="124" style="background: #FFF; padding-top:24px;padding-bottom:42px;padding-right:24px;padding-left:24px; border-radius: 6px;">
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
@@ -533,7 +392,7 @@
                                                         <tr>
                                                             <td align="center" style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0">
                                                                 <a href="#">
-                                                                    <img src="https://aleks664.github.io/email/images/img-3.png" alt="" width="264" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
+                                                                    <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNGg2MHc4YTg5MV9pbWdfMy5wbmciXV0/a63b157aff666779/img-3.png" alt="img-3.png"width="264" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -547,7 +406,7 @@
                                                         <tr>
                                                             <td align="center" style="padding-top:0px;padding-bottom:0;padding-right:0;padding-left:0">
                                                                 <a href="#">
-                                                                    <img src="https://aleks664.github.io/email/images/img-3.png" alt="" width="264" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
+                                                                    <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNGg2MHc4YTg5MV9pbWdfMy5wbmciXV0/a63b157aff666779/img-3.png" alt="img-3.png"width="264" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:100%">
                                                                 </a>
                                                             </td>
                                                         </tr>
@@ -561,7 +420,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="txt" style=" padding-left: 8px; padding-right: 8px; font-weight: 500; font-size: 14px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="txt" style=" padding-left: 8px; padding-right: 8px; font-weight: 500; font-size: 14px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
                                             </td>
                                         </tr>
@@ -581,17 +440,17 @@
                                     <table align="center" cellspacing="0" cellpadding="0" border="0" style="width:100%; border:0;">
                                         <tr>
                                             <td align="right" class="envelope" style="padding-bottom: 10px;">
-                                                <img  src="https://aleks664.github.io/email/images/envelope.png" alt="logo" width="46"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:46px">
+                                                <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIvNHIyaXYxem1lOV9lbnZlbG9wZS5wbmciXV0/7c9ef184add1123d/envelope.png" alt="envelope.png"  width="46"  style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:46px">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="h1" style="padding-bottom: 32px; font-weight: 600;font-size: 36px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем ящике новое
                                                 сообщение!
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" class="txt" style="padding-top: 0; padding-bottom: 0; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
+                                            <td align="center" class="txt" style="padding-top: 0; padding-bottom: 0; padding-left: 8px; padding-right: 8px; font-weight: 500;font-size: 14px;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
                                                 В вашем электронном ящике вас ждет новое сообщение! Не упустите важную информацию — проверьте письма, чтобы оставаться в курсе последних обновлений, предложений или изменений. Если это связано с вашим проектом, сообщением от партнера или просто интересными новостями, следует ознакомиться с содержимым как можно скорее, чтобы ничего не потерять!
                                             </td>
                                         </tr>
@@ -614,14 +473,14 @@
                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor: bottom; width:137px;" arcsize="10%" strokecolor="#bccae5" fill="t">
                                 <v:fill type="tile" src="" color="#bccae5" />
                                 <w:anchorlock/>
-                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
-                                    <img style="" src="https://aleks664.github.io/email/images/t-o.png" alt="" style="vertical-align: middle;">
+                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
+                                    <img style="" src="/media/W1siZiIsIjIwMjUvMDUvMjIveXNqcnlqa21iX3Rfby5wbmciXV0/db45aaa24624a456/t-o.png" alt="t-o.png" alt="" style="vertical-align: middle;">
                                 </center>
                             </v:roundrect>
                             <![endif]-->
 
-                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
-                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="https://aleks664.github.io/email/images/t.png" alt="">
+                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="/media/W1siZiIsIjIwMjUvMDUvMjIvOTJ3cjF2YjdlcV90LnBuZyJdXQ/c8b1ab2adc8bcdc3/t.png" alt="telegram">
                                 Подписаться
                             </a>
 
@@ -643,13 +502,13 @@
                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:137px;" arcsize="10%" strokecolor="#bccae5" fill="t">
                                 <v:fill type="tile" src="" color="#bccae5" />
                                 <w:anchorlock/>
-                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
-                                    <img style="" src="https://aleks664.github.io/email/images/t-u.png" alt="" style="vertical-align: middle;">
+                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
+                                    <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIveXVpOWR2anljX3Vfby5wbmciXV0/04d6f941a019c2f9/u-o.png" alt="u-o.png" style="vertical-align: middle;">
                                 </center>
                             </v:roundrect>
                             <![endif]-->
-                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
-                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="https://aleks664.github.io/email/images/u.png" alt="">
+                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="/media/W1siZiIsIjIwMjUvMDUvMjIvNG12eG84OXFyeF91LnBuZyJdXQ/7af277c39615e022/u.png" alt="u.png">
                                 Подписаться
                             </a>
                         </div>
@@ -663,13 +522,13 @@
                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:137px;" arcsize="10%" strokecolor="#bccae5" fill="t">
                                 <v:fill type="tile" src="" color="#bccae5" />
                                 <w:anchorlock/>
-                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
-                                    <img style="" src="https://aleks664.github.io/email/images/vk-o.png" alt="" style="vertical-align: middle;">
+                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
+                                    <img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNTlqZGh0aWVsMl92a19vLnBuZyJdXQ/3435dd2cd87b1f01/vk-o.png" alt="vk-o.png" style="vertical-align: middle;">
                                 </center>
                             </v:roundrect>
                             <![endif]-->
-                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
-                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="https://aleks664.github.io/email/images/vk.png" alt="">
+                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px"src="/media/W1siZiIsIjIwMjUvMDUvMjIvNHRrNnBvYXZxel92ay5wbmciXV0/09576c0d670b02e8/vk.png" alt="vk.png">
                                 Подписаться
                             </a>
                         </div>
@@ -683,13 +542,13 @@
                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:137px;" arcsize="10%" strokecolor="#bccae5" fill="t">
                                 <v:fill type="tile" src="" color="#bccae5" />
                                 <w:anchorlock/>
-                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">
-                                    <img style="" src="https://aleks664.github.io/email/images/r-o.png" alt="" style="vertical-align: middle;">
+                                <center style="font-size: 12px; line-height: 1;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif;">
+                                    <img  src="/media/W1siZiIsIjIwMjUvMDUvMjIvNzE2cTRicDZqeV9yX28ucG5nIl1d/bec616e581567eda/r-o.png" alt="r-o.png" style="vertical-align: middle;">
                                 </center>
                             </v:roundrect>
                             <![endif]-->
-                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Gilroy', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
-                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="https://aleks664.github.io/email/images/r.png" alt="">
+                            <a href="http://" style="display: block; text-decoration: none;border-radius: 12px;background: #bccae5;font-weight: 700; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px; font-size: 12px; line-height: 140%;text-align: center;color: #142036; font-family:  'Inter', Arial,Helvetica,sans-serif; -webkit-text-size-adjust:none;mso-hide:all;">
+                                <img width="24" style="width: 24px; vertical-align: middle; margin-right: 10px" src="/media/W1siZiIsIjIwMjUvMDUvMjIvbTZ5NWQwc2pkX3IucG5nIl1d/3b6485621c33a65e/r.png" alt="r.png">
                                 Подписаться
                             </a>
 
@@ -709,7 +568,7 @@
                                 <td width="50%" valign="top" >
                         <![endif]-->
                         <div dir="ltr" class="user"  style="width:100%; max-width:305px;display:inline-block;vertical-align:top;" >
-                            <img width="305" style="width: 305px; display:block;" src="https://aleks664.github.io/email/images/user.png" alt="">
+                            <img width="305" style="width: 305px; display:block;" src="/media/W1siZiIsIjIwMjUvMDUvMjIvN2swNWN3aG50bl91c2VyLnBuZyJdXQ/a8433772e84ff722/user.png" alt="user.png" >
                         </div>
                         <!--[if (gte mso 9)|(IE)]>
                         </td><td width="50%" valign="top" >
@@ -736,22 +595,22 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lnks"  style="padding-top:62px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;" >
-                                        Наш сайт:&nbsp;<a href="https://podpislon.ru" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">https://podpislon.ru</a>
+                                    <td class="lnks"  style="padding-top:62px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;" >
+                                        Наш сайт:&nbsp;<a href="https://podpislon.ru" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;">https://podpislon.ru</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lnks-2"  style="padding-top:12px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;" >
-                                        Наш email: &nbsp;<a href="mailto:hello@off-group.com" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">hello@off-group.com</a>
+                                    <td class="lnks-2"  style="padding-top:12px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;" >
+                                        Наш email: &nbsp;<a href="mailto:hello@off-group.com" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;">hello@off-group.com</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="lnks-2"  style="padding-top:12px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;" >
-                                        Телефон:  &nbsp;<a href="tel:88005057737" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;">8 (800) 505-77-37</a>
+                                    <td class="lnks-2"  style="padding-top:12px;padding-bottom:0;padding-right:0; font-weight: 600; font-size: 16px; color: #bccae5; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;" >
+                                        Телефон:  &nbsp;<a href="tel:88005057737" style="font-weight: 600; font-size: 16px; color: #fff; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;">8 (800) 505-77-37</a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="f-t"  style="padding-top:62px;padding-bottom:0;padding-right:0; font-weight: 500; font-size: 14px; color: #bccae5; line-height: 1.3; font-family:  'Gilroy', Arial,Helvetica,sans-serif;" >
+                                    <td class="f-t"  style="padding-top:62px;padding-bottom:0;padding-right:0; font-weight: 500; font-size: 14px; color: #bccae5; line-height: 1.3; font-family:  'Inter', Arial,Helvetica,sans-serif;" >
                                         Вы получили данную рассылку, так как являетесь клиентом или подписчиком Off Group.
                                         <br>
                                         <br>
@@ -777,3 +636,4 @@
 <![endif]-->
 </body>
 </html>
+<img src="/media/W1siZiIsIjIwMjUvMDUvMjIvNXBlcmprNW5nM19lbWJsZW1fMi5wbmciXV0/091ee29b58ccf511/emblem-2.png" alt="emblem-2.png" />
